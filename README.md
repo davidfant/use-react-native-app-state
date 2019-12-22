@@ -1,11 +1,11 @@
 
-# use-appstate
+# use-react-native-app-state
 
 This module makes it easy to use [React Native's AppState](https://facebook.github.io/react-native/docs/appstate) with React Hooks.
 
 ## Installation
 ```
-yarn add use-appstate
+yarn add use-react-native-app-state
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ yarn add use-appstate
 ### useAppState
 
 ```ts
-import { useAppState } from 'use-appstate';
+import { useAppState } from 'use-react-native-app-state';
 
 function Component(props) {
     // Possible values: "active", "background", "inactive" (iOS only)
@@ -25,7 +25,7 @@ function Component(props) {
 ### useAppStateChange
 
 ```ts
-import { useAppStateChange } from 'use-appstate';
+import { useAppStateChange } from 'use-react-native-app-state';
 
 function Component(props) {
     useAppStateChange(
@@ -40,7 +40,7 @@ function Component(props) {
 ### useAppStateChangedTo
 
 ```ts
-import { useAppStateChangedTo } from 'use-appstate';
+import { useAppStateChangedTo } from 'use-react-native-app-state';
 
 function Component(props) {
     useAppStateChangedTo(
