@@ -28,7 +28,6 @@ function Component(props) {
 import { useAppStateChange } from 'use-appstate';
 
 function Component(props) {
-    // Possible values: "active", "background", "inactive" (iOS only)
     useAppStateChange(
         (status: AppStateStatus) => alert('App state changed: ' + status),
         // triggers to update the callback
@@ -44,9 +43,9 @@ function Component(props) {
 import { useAppStateChangedTo } from 'use-appstate';
 
 function Component(props) {
-    // Possible values: "active", "background", "inactive" (iOS only)
     useAppStateChangedTo(
-        'active', // AppStateStatus
+        // Possible values: "active", "background", "inactive" (iOS only)
+        'active',
         () => alert('App became active'),
         // triggers to update the callback
         [props.updateCallbackWhenThisPropsChanges],
