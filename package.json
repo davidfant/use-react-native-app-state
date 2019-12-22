@@ -1,0 +1,26 @@
+{
+    "name": "use-appstate",
+    "version": "0.0.1",
+    "description": "React hooks for easily using React Native's AppState",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:davidfant/use-appstate.git"
+    },
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "author": "David Fant <david@fant.io> (https://fant.io)",
+    "peerDependencies": {
+        "react": ">=16.8.0",
+        "react-native": ">=0.59.0"
+    },
+    "devDependencies": {
+        "@types/react": "^16.9.11",
+        "@types/react-native": "^0.60.22",
+        "react": "^16.11.0",
+        "react-native": "^0.61.3",
+        "typescript": "^3.6.4"
+    },
+    "scripts": {
+        "publish": "yarn tsc && npm publish"
+    }
+}
